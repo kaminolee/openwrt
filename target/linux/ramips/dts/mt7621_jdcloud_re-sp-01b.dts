@@ -111,17 +111,17 @@
 	ports {
 		port@0 {
 			status = "okay";
-			label = "wan";
+			label = "lan";
 		};
 
 		port@1 {
 			status = "okay";
-			label = "lan1";
+			label = "wan";
 		};
 
 		port@2 {
 			status = "okay";
-			label = "lan2";
+			label = "wanb";
 		};
 	};
 };

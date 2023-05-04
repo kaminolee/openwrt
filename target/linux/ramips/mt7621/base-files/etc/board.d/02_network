@@ -66,7 +66,6 @@ ramips_setup_interfaces()
 	glinet,gl-mt1300|\
 	iptime,a3002mesh|\
 	jcg,q20|\
-	jdcloud,re-sp-01b|\
 	lenovo,newifi-d1|\
 	mikrotik,routerboard-m33g|\
 	mts,wg430223|\
@@ -78,6 +77,9 @@ ramips_setup_interfaces()
 	xiaomi,mi-router-4a-gigabit|\
 	xiaomi,mi-router-4a-gigabit-v2)
 		ucidef_set_interfaces_lan_wan "lan1 lan2" "wan"
+		;;
+	jdcloud,re-sp-01b)
+		ucidef_set_interfaces_lan_wan "lan" "wan"
 		;;
 	bolt,arion)
 		ucidef_set_interfaces_lan_wan "lan" "wan"
